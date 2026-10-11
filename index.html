@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Infinite Void · by Sayandeep Maiti</title>
+<meta name="description" content="A computational portfolio: infinity mathematics, a multiverse simulator and ideas from the Mahabharata and the Bhagavad Gita.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∞</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="prog"></div><a class="skip" href="#main">Skip to content</a>
+<header class="nav"><a class="logo" href="#top" aria-label="Home">∞</a>
+<nav aria-label="Sections"><a href="#domain">Void</a><a href="#lab">Infinity Lab</a><a href="#multiverse">Multiverse</a><a href="#roots">Roots</a><a href="#gita">Gita</a><a href="#about">About</a></nav>
+<button id="theme" aria-label="Toggle dark or light mode">◐</button></header>
+<main id="main">
+<section class="hero" id="top"><div class="wrap">
+<p class="tag"><span class="ln"></span>A computational portfolio experience</p>
+<h1>A computational journey from <span class="g">Infinite Void to Multiverse</span></h1>
+<p class="lede">Where anime-inspired imagination meets mathematical models, branching possibilities, and ancient Indian philosophical ideas, built with code.</p>
+<a class="btn" href="#domain">Enter the Void ↗</a><a class="btn ghost" href="#multiverse">Explore the Multiverse</a>
+<p class="chips"><i></i>Interactive experience <i class="v"></i>HTML · CSS · JavaScript</p>
+<div class="card orbcard"><span class="pill">● Infinite possibility</span><div class="rings"><i></i><i></i><i></i><b class="glow">∞</b></div></div>
+</div></section>
+
+<section id="domain" class="wrap"><p class="tag">01 / Fiction meets computation</p>
+<h2>Domain: <span class="g">Infinite Void</span></h2>
+<p class="sub">An original cosmic visual experience inspired by the fictional Domain Expansion idea from anime. Activate the field, watch particles move, and explore an illustrative information-load model.</p>
+<div class="card"><p class="tag s"><span class="dot"></span>Visual simulation <em>IV-001</em></p>
+<canvas id="void" height="320" aria-label="Particle field simulation"></canvas>
+<button class="btn small" id="field" aria-pressed="false">Activate field</button><p class="note" id="hud"></p><p class="note">Drag across the field to pull the particles, tap to send out a shockwave.</p></div>
+<div class="card"><p class="tag s">Information load model <em>SIM / 02</em></p>
+<h3>How does input load change?</h3><p class="sub">Move the slider to change an illustrative stream of incoming information. This is a toy model, not a real neurological measurement.</p>
+<label for="load" class="row">Incoming data intensity <b id="lv" class="big">42<small>%</small></b></label>
+<input id="load" type="range" min="0" max="100" value="42">
+<div class="meter"><div id="mf"></div></div>
+<div class="grid2"><div class="stat"><b id="u">42</b>Illustrative units</div><div class="stat"><b id="cat">Moderate</b>Model category</div></div>
+<p class="note box"><b>Computer science connection</b><br>Real systems have finite processing capacity. Engineers measure throughput, latency and memory use to understand workload.</p></div>
+</section>
+
+<section id="lab" class="wrap"><p class="tag">02 / Mathematical model</p>
+<h2>The <span class="g">Infinity Lab</span></h2>
+<p class="sub">A hands-on look at a geometric sequence that approaches zero. Change the iteration and watch the number and graph respond.</p>
+<div class="card"><label for="it" class="row">Halving steps <b id="itn" class="big">4</b></label>
+<input id="it" type="range" min="0" max="10" value="4">
+<div class="grid3"><div class="stat"><b id="sn">4</b>Halving steps</div><div class="stat"><b>50%</b>Retained per step</div><div class="stat"><b>0</b>Limit</div></div></div>
+<div class="card"><p class="tag s">Live graph <em>Canvas / 2D</em></p><h3>Distance approaching zero</h3>
+<canvas id="graph" height="260" aria-label="Graph of d(n) = 100 times one half to the n"></canvas>
+<p id="gv" class="note"></p><p class="note">This is a mathematical analogy for approaching a limit, not a scientific model of a fictional ability.</p></div>
+<div class="card"><p class="tag s">Recursion <em>Sierpinski</em></p><h3>An endless pattern from one rule</h3><p class="sub">Cut the middle out of every triangle, again and again. Each step triples the pieces, the same idea as Ananta: a process with no final step.</p><canvas id="fr" height="280" aria-label="Sierpinski triangle"></canvas><label for="fd" class="row">Recursion depth <b id="fn" class="big">4</b></label><input id="fd" type="range" min="0" max="7" value="4"><p class="note"><span id="ft">81</span> triangles drawn at this depth</p></div>
+<div class="card"><h3>Hilbert's Hotel</h3><p class="sub">Every room is full, yet a new guest still fits: everyone moves along.</p>
+<div id="hotel" class="rooms"></div><button class="btn small" id="g1">A new guest arrives</button><button class="btn small ghost" id="g2">An infinite bus arrives</button><p id="hn" class="note">Rooms 1 to 12 are shown. The hotel has infinitely many.</p></div>
+<p class="fact">Georg Cantor proved that some infinities are larger than others: the real numbers cannot be listed one by one.</p>
+</section>
+
+<section id="multiverse" class="wrap"><p class="tag">03 / Branching possibilities</p>
+<h2>Multiverse <span class="g">Explorer</span></h2>
+<p class="sub">Explore a simple decision tree. Pick a branch to see a hypothetical direction, or generate a new set of possibilities.</p>
+<div class="card"><p class="tag s">Timeline simulator</p><p class="note">One starting point · multiple possible paths</p>
+<button class="btn small ghost" id="regen">↻ Regenerate paths</button>
+<div class="origin">◈ <span><small>Origin point</small><br><b>One decision</b></span></div><div class="stem"></div>
+<div id="paths"></div>
+<div class="card inner" aria-live="polite"><b>Your next possibility</b><p id="out" class="note">Select a branch above to reveal its hypothetical outcome.</p></div>
+<p class="row note"><span id="bc">3 possible branches available</span><button class="link" id="reset">Reset selection ↺</button></p>
+<p class="note">This is a branching software model, not evidence that real parallel universes exist.</p></div>
+<div class="card"><p class="tag s">Parallel universe generator</p><h3>Spawn imagined universes</h3><p class="sub">Some physicists suggest other universes might have different physical constants. These are imagined. Tap a bubble to inspect it.</p><button class="btn small" id="spawn">Spawn a universe</button><div id="bubbles" class="bubbles"></div><div class="card inner" id="uni" aria-live="polite">Tap a bubble to read its laws.</div></div>
+</section>
+
+<section id="roots" class="wrap"><p class="tag">04 / Ancient ideas</p>
+<h2>Indian ideas as <span class="g">computational metaphors</span></h2>
+<div class="grid2">
+<article class="card"><div class="art a1">∞</div><p class="tag s">01 / Endless</p><h3>Ananta</h3><p>Ananta means "endless" in Sanskrit and is associated with Shesha in Hindu traditions. Here it inspires a metaphor for processes that continue without a final step.</p><p class="cc">Computational connection<br><b>Recursion · Unbounded processes · Infinity</b></p></article>
+<article class="card"><div class="art a2">◔</div><p class="tag s">02 / Cycles of time</p><h3>Kalachakra</h3><p>Cyclic conceptions of time appear in Indian traditions. This project uses the idea as inspiration for repeating states, loops and timelines.</p><p class="cc">Computational connection<br><b>Loops · State transitions · Periodic systems</b></p></article>
+<article class="card"><div class="art a3">✦</div><p class="tag s">03 / Space &amp; ether</p><h3>Akasha</h3><p>Akasha has different meanings across Indian philosophical schools, including space or ether in some contexts. Here it prompts questions about the space in which a model is represented.</p><p class="cc">Computational connection<br><b>Virtual environments · Coordinate spaces · Data models</b></p></article>
+<article class="card"><div class="art a4">धर्म</div><p class="tag s">04 / Choice &amp; consequence</p><h3>Mahabharata</h3><p>The epic explores duty, relationships, difficult choices and consequences. Its themes inspire this project's branching decision narratives.</p><p class="cc">Computational connection<br><b>Decision trees · Conditional logic · Ethical design</b></p></article>
+</div>
+<p class="card note box gold"><b>Respectful connection:</b> cultural and philosophical traditions are presented on their own terms. The links to computer science are modern interpretations and creative metaphors, not proof of the physical multiverse.</p></section>
+
+<section id="gita" class="cosmic"><div class="wrap">
+<p class="tag">05 / The Bhagavad Gita</p><h2>Kurukshetra, <span class="g">Vishvarupa</span> and Arjuna's choice</h2>
+<div class="grid2"><div>
+<p>The Mahabharata follows two branches of one family, the Pandavas and the Kauravas, as they march toward war. The Bhagavad Gita is a conversation inside it: on the field of Kurukshetra, Arjuna sees teachers and cousins in the opposing army and lowers his bow. His charioteer Krishna answers with a teaching on duty (dharma) and on acting without clinging to the result.</p>
+<div class="rings sm"><i></i><i></i><i></i><b class="glow">ॐ</b></div>
+<h3>Vishvarupa, the cosmic form</h3>
+<p>In chapter 11 Arjuna is given divine sight and sees all of creation within one being: countless faces, worlds beginning and ending. He is awed and shaken. The scene is an ancient picture of the limits of human understanding.</p></div>
+<div id="arjuna" class="card story" aria-live="polite"></div></div></div></section>
+
+<section id="made" class="wrap"><p class="tag">06 / Behind the build</p><h2>Made of <span class="g">curiosity &amp; code</span></h2>
+<p class="sub">A beginner-friendly portfolio project that demonstrates practical front-end concepts through a visual story.</p>
+<div class="grid2">
+<article class="card"><h3>⌘ Frontend structure</h3><p>Semantic HTML sections, accessible controls, reusable CSS patterns and responsive layouts.</p><span class="chip">HTML5</span><span class="chip">CSS3</span></article>
+<article class="card"><h3>↻ Interactive logic</h3><p>JavaScript events, slider-driven calculations, generated particles, branching choices and reset controls.</p><span class="chip">JavaScript</span><span class="chip">DOM</span></article>
+<article class="card"><h3>▥ Data visualization</h3><p>A Canvas graph plots a mathematical sequence and highlights the selected iteration.</p><span class="chip">Canvas</span><span class="chip">Math</span></article>
+<article class="card"><h3>◐ Design system</h3><p>Dark and light themes, a mobile-first layout, keyboard focus styles and reduced-motion support.</p><span class="chip">Responsive</span><span class="chip">Accessibility</span></article>
+</div></section>
+
+<section id="about" class="wrap"><p class="tag">07 / The creator</p><h2>About <span class="g">me</span></h2>
+<div class="grid2"><article class="card"><h3>Sayandeep Maiti</h3>
+<p>B.Tech CSE student, 2nd year · Haldia Institute of Technology · Kolkata, India</p>
+<p>I am a second-year computer science student at Haldia Institute of Technology. Infinite Void is my first web project, made while learning HTML, CSS and JavaScript.</p><p>I picked infinity as the theme because it connects mathematics, computer science and the Indian idea of Ananta. Building the simulations taught me how animation loops, sliders and canvas drawing work together.</p>
+<p>Email: <a href="mailto:maitibandhudas@gmail.com">maitibandhudas@gmail.com</a></p>
+<button class="btn small ghost" onclick="window.print()">Print resume</button></article>
+<article class="card"><h3>Skills &amp; projects</h3><ul><li>HTML, CSS, JavaScript, responsive design</li><li>First project: Infinite Void (this site)</li><li>Learning: web development and computer science fundamentals</li><li>Education: B.Tech in Computer Science and Engineering, Haldia Institute of Technology (2nd year)</li></ul></article></div></section>
+</main>
+<footer>Designed and built by Sayandeep Maiti · Haldia Institute of Technology · 2026</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
